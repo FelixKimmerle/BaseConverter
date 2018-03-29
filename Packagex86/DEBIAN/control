@@ -1,0 +1,11 @@
+Source: bc
+Section: science
+Priority: extra
+Maintainer: Felix Kimmerle FelixKimmerle@hotmail.com
+Standards-Version: 1.0.0
+Homepage: atombier.de/felix
+Package:bc
+Version:1.0.0
+Architecture:amd64
+Description:bc is a simple base converter
+
