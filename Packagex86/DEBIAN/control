@@ -6,6 +6,6 @@ Standards-Version: 1.0.0
 Homepage: atombier.de/felix
 Package:bc
 Version:1.0.0
-Architecture:amd64
+Architecture:i386
 Description:bc is a simple base converter
 
