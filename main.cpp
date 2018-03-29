@@ -30,6 +30,8 @@ unsigned long long int CharToNumber(const char &val)
 			return 63;
 		break;
 	}
+	std::cerr << val << " : is not a valid character" << std::endl;
+	return 0;
 }
 
 unsigned long long int ToBinary(int base, const std::string &text) //So the c++ programm can calculate
