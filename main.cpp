@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
+#include <cmath>
 const char *set = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz+/";
 
 unsigned long long int CharToNumber(const char &val)
@@ -45,7 +46,7 @@ unsigned long long int ToBinary(int base, const std::string &text) //So the c++ 
 		unsigned long long int num = 0;
 		for (size_t i = 0; i < text.length(); i++)
 		{
-			num += CharToNumber(text[i]) * pow(base, text.length() - i - 1);
+			num += CharToNumber(text[i]) * std::pow(base, text.length() - i - 1);
 		}
 		return num;
 	}
@@ -116,7 +117,7 @@ unsigned long long int StringToInt(std::string val)
 			}
 			else
 			{
-				num += digit * pow(10, length - i - 1);
+				num += digit * std::pow(10, length - i - 1);
 			}
         	}
 	}
@@ -158,7 +159,8 @@ int main(int argc, char* argv[])
 			}
 			else
 			{
-				int basem = StringToInt(argv[1]);
+				int basem = StringToInt(argv[3]);
+				std::cout << "basem: " << basem << " basen:" << basen << std::endl;
 				if(basen > 64 || basen < 1 || basem > 64 || basem < 1)
 				{
 					std::cerr << "a base must be in the area between 1 and 64" << std::endl;
