@@ -160,7 +160,6 @@ int main(int argc, char* argv[])
 			else
 			{
 				int basem = StringToInt(argv[3]);
-				std::cout << "basem: " << basem << " basen:" << basen << std::endl;
 				if(basen > 64 || basen < 1 || basem > 64 || basem < 1)
 				{
 					std::cerr << "a base must be in the area between 1 and 64" << std::endl;
